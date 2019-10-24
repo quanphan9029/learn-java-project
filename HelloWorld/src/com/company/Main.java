@@ -1,6 +1,10 @@
 package com.company;
+
 import java.util.Scanner;
-import java.math.*;
+import com.company.Person;
+
+import static com.company.Person.age;
+import static com.company.Person.fullname;
 
 
 public class Main {
@@ -9,8 +13,8 @@ public class Main {
 	// write your code here
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Nhap vao he so a,b,c cua phuong trinh bac 2 can giai:");
-        System.out.println("He so a: ");
+        System.out.println("Nhap vao he so a,b,c cua phuong trinh bac 2 can giai:");
+        System.out.print("He so a: ");
         int a = sc.nextInt();
         System.out.print("He so ba: ");
         int b = sc.nextInt();
@@ -39,5 +43,9 @@ public class Main {
             System.out.println("x1 = " + x1);
             System.out.println("x2 = " + x2);
         }
+        fullname();
+        age();
+
+
     }
 }
